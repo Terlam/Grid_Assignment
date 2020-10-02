@@ -39,7 +39,7 @@
   flex-direction: column;
   align-items: center;
   
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
 .monkey {
@@ -58,7 +58,7 @@
 }
 
 .emoji {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .versus {
