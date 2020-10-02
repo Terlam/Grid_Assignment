@@ -1,0 +1,18 @@
+@keyframes bounce{
+    0%{
+
+    }
+}
+
+.ball{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    height: 50px;
+    width: 50px;
+    color: black;
+    border-radius: 100%;
+    /* box-shaddow: x-offset, y-offset, blur, spread, color */
+    box-shadow: 0 0 0 0 black;
+    
+}

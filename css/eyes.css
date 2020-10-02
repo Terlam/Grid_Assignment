@@ -1,0 +1,70 @@
+@keyframes wink{
+    0%{
+        height: inherit;
+        left: 440px;
+        
+        
+    }
+    25%{
+        height: 50%;
+        left: 370px;
+       
+    }
+    50%{
+        height: inherit;
+        left: 440px;
+        
+    }
+    75%{
+        height: inherit;
+        right: 510px;
+       
+    }
+    100%{
+        height: inherit;
+       left: 440px;
+    }
+}
+
+.eyes{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 80px;
+    width: 50px;
+    color: black;
+    border-radius: 100%;
+    /* box-shaddow: x-offset, y-offset, blur, spread, color */
+    box-shadow: 220px 150px 0 0 black;
+    
+}
+
+/* Psuedo Element that was not created directly 
+inside of HTML but created by CSS */
+
+.eyes::before{
+    content: "";
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    top: 150px;
+    left: 440px;
+    background-color: black;
+    border-radius: 100%;
+    /* Animation area: animation-name, animation-duration, animation-iteration count */
+    animation-name: wink;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+
+.eyes::after{
+    content: "";
+    position: absolute;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+    border: 5px solid gold;
+    top: 115px;
+    left: 388px;
+}
