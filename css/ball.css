@@ -1,18 +1,56 @@
-@keyframes bounce{
-    0%{
-
-    }
-}
-
 .ball{
-    position: fixed;
+    /* position: fixed; */
     top: 10px;
-    left: 10px;
-    height: 50px;
-    width: 50px;
-    color: black;
+    left: -120;
+    height: 100px;
+    width: 100px;
+   color: black;
     border-radius: 100%;
     /* box-shaddow: x-offset, y-offset, blur, spread, color */
-    box-shadow: 0 0 0 0 black;
     
 }
+.ball::before{
+    content: "";
+    height: inherit;
+    width: 50px;
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    background-color: orangered;
+    border-radius: 100%;
+    /* Animation area: animation-name, animation-duration, animation-iteration count */
+    animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: solid black;
+    border-width: 2px;
+    border-right-width: 30px;
+    border-left-width: 40px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+.ball::after{
+     content: "";
+    height: 2px;
+    width: inherit;
+    position: absolute;
+    top: 30px;
+    left: -120px;
+    background-color: orangered;
+    border-radius: 100%; 
+    /* Animation area: animation-name, animation-duration, animation-iteration count */
+     animation-name: bounce;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    border: solid black .85px;
+}
+@keyframes bounce{
+    0%  {top: inherit; height: inherit}
+    25% {top: 250px; height: 80px}
+    50% {top: 60px; height: inherit}
+    75% {top: 250px; height: 80px}
+    /* 80% {top: 90px; height: 90px} */
+    /* 90% {top: 250px; height: 85px;} */
+    100%{top: inherit; height: inherit}
+}
+

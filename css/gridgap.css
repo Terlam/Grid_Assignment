@@ -1,5 +1,4 @@
-HTML CSSResult
-EDIT ON
+
 .sides {
   animation: 0.7s curtain cubic-bezier(.86,0,.07,1) 0.4s both;
   
@@ -24,16 +23,8 @@ EDIT ON
 
 
 
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  font-family: "Arial Black", sans-serif;
-}
-
-.intro {
-  height: 100%;
+.content1 {
+  height: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -52,13 +43,13 @@ body {
 }
 
 .monkey {
-  background-color: #dcc9a1;
-  color: #534325;
+  background-color: #fdb827;
+  color: #542583;
 }
 
 .robot {
-  background-color: #1b636f;
-  color: #ffffff;
+  background-color: #bf2f38;
+  color: #061922;
   flex-direction: column-reverse;
 }
 
@@ -86,16 +77,13 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 3.4vw;
-  color: #123456;
+  color: black;
   border-width: 10px;
   border-style: solid;
-  border-color: #1b636f #dcc9a1 #dcc9a1 #1b636f;
+  border-color: #bf2f38 #fdb827 #fdb827 #bf2f38;
   transform: rotate(-45deg);
 }
 
 .versus span {
   transform: rotate(35deg);
 }
-
-
-Resources

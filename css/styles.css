@@ -1,3 +1,6 @@
+@import './gridgap.css';
+@import './ball.css';
+
 .grid-wrapper{
     display: grid;
     width: 100vw;
@@ -11,18 +14,19 @@
        grid-template-columns: 1fr 2fr 2fr 50fr 1fr;
        grid-template:
              "header    header      header      header       navigation"
-             "content1  content1    content2    content2     navigation"
-             "content1  content1    content2    content2     navigation"
-             "content1  content1    content2    content2     navigation"
+             "content1  content1    content1    content1     navigation"
+             "content1  content1    content1    content1     navigation"
+             "content1  content1    content1    content1     navigation"
              "footer    footer      footer      footer       footer";
 
     font-family: Arial, Helvetica, sans-serif;         
-       
+    ; 
 }
 /* header Area */
 .header{
     grid-area:header;
     background-color: red;
+    font-size: 2rem;
     
 }
 
@@ -34,10 +38,12 @@
 /* content 1 Area*/
 .content1{
     grid-area:content1;
-    background-color: blue;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    background-color: BLACK;
 } 
 
-/* content 2 Area */
+/* content 2 Area
 .content2{
     grid-area: content2;
     background-color: darkgoldenrod;
@@ -46,23 +52,37 @@
 .content1, .content2{
     text-align: center;
     color: whitesmoke;
-}
+} */
+
 /* Navigation Area */
 .navigation{
     grid-area: navigation;
-    background-color: cornflowerblue;
+    background-color: #ae8ca3;
+    color: whitesmoke;
+    padding: 1em;
 }
+
+nav ul{
+    text-decoration: none;
+}
+
+
 
 /* Footer Area */
 .footer{
     grid-area: footer;
-    background-color: darksalmon;
+    background-color: #91ccec;
 }
 
-@import './eyes.css';
 
 .container{
     margin: 0 auto;
     position: absolute;
     transform: translate(7em,0);
+}
+
+li>a{
+font-weight: bolder;
+color: white;
+line-height: 2rem;
 }
