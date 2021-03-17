@@ -3,7 +3,7 @@
 
 .grid-wrapper{
     display: grid;
-    width: 95vw;
+    width: 98vw;
     height: 95vh;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
